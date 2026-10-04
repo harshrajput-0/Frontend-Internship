@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-hover: #f6f8fa;
+
+  --text: #222222;
+  --text-secondary: #7a7a7a;
+
+  --primary: #3b6e8f;
+
+  --border: #ececec;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: var(--primary);
+}
+
+button {
+  background: none;
+  border: none;
+  padding: none;
+  cursor: pointer;
+}
+button:hover {
+  color: var(--primary);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.subtext {
+  color: var(--text-secondary);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  justify-content: space-evenly;
+}
+
+/* =========== SECTIONS ============= */
+section {
+  padding: 44px 0;
+  border: 1px solid var(--border);
+}
+
+section p {
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.section-heading {
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+  margin-left: 8px;
+}
+
+.section-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  padding: 24px 8px;
+}
+.section-item:hover {
+  background-color: var(--bg-hover);
+}
+
+.section-label {
+  font-size: 14px;
+  padding: 7px;
+}
+
+.data h3 {
+  font-size: 20px;
+}
+.section-item:hover h3 {
+  color: var(--primary);
+}
+.data p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  text-align: left;
+  padding: 0;
+}
+
+
+
+/* =========== TABLE ============= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+tr:last-child th, tr:last-child td{
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: var(--bg-hover);
+}
+
+tr:hover td {
+    color: var(--primary);
+}
+
+.contact-links {
+    margin-top: 24px;
+}
+.contact-links a{
+    display: inline-block;
+    border-bottom: 1px solid var(--border);
+    margin-left: 14px;
+}
+.contact-links a:hover {
+    border-bottom-color: var(--primary);
+}
