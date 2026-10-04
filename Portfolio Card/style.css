@@ -2,4 +2,201 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+:root {
+  --primary: rgb(89, 33, 255);
+  --primary-active: rgb(62, 22, 181);
+  --bg: rgb(223, 224, 255);
+
+  --text: rgb(0, 0, 0);
+  --text-secondary: rgb(36, 36, 36);
+  --border: rgba(114, 104, 141, 0.39);
+}
+
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.card {
+  background-color: aliceblue;
+  border-radius: 20px;
+  max-width: 480px;
+  overflow: hidden;
+  animation: cardEnter 0.6s ease-out;
+}
+
+/* ======== CARD ANIMATION ========*/
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(2px);
+  }
+}
+
+.card header {
+  background-color: var(--primary);
+  padding: 24px 20px;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.img-container {
+  width: 65px;
+  height: 65px;
+  display: inline-block;
+  overflow: hidden;
+  animation: float 3s ease-in-out infinite;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+header .header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+header .header-info h1 {
+  font-size: 1.8rem;
+}
+header .header-info p {
+  font-size: 16px;
+  flex: 1;
+}
+.main-content {
+  padding-bottom: 24px;
+}
+
+/* =========== SECTIONS =============*/
+section {
+  padding: 24px 20px 4px;
+  color: var(--text);
+  font-size: 14px;
+  animation: sectionEnter 0.5s ease-out both;
+}
+
+section h2 {
+  color: var(--primary);
+  font-size: 18px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+section p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* ----- SKILLS SECTION ------ */
+.skills {
+  display: flex;
+  margin-top: 4px;
+}
+
+.skills a {
+  margin-left: 8px;
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+
+.skills a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* ----- PROJECTS SECTION ------ */
+.project-info {
+  padding: 6px 8px;
+  background-color: var(--bg);
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.project-info p {
+  font-size: 12px;
+}
+
+
+/* ----- CONTACT SECTION ------- */
+.contact-links {
+  margin-top: 12px;
+}
+
+.links {
+  background-color: var(--primary);
+  color: aliceblue;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+
+  transition: all 0.2s ease;
+}
+.links:hover {
+  background-color: var(--primary-active);
+  color: aliceblue;
+  transform: translateY(1px);
+}
+
+
+/* ===========| SECTION ANIMATION |=============*/
+@keyframes sectionEnter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about {
+  animation-delay: 0.2s;
+}
+
+.skill-section {
+  animation-delay: 0.3s;
+}
+
+.project-section {
+  animation-delay: 0.4s;
+}
+
+.contact-section {
+  animation-delay: 0.5s;
 }
