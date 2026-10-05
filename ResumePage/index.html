@@ -6,57 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/ResumePage/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
-    <title>Resume Page</title>
+    <title>Harsh Resume Page</title>
 </head>
 
 <body>
-    <!-- =============| HEADER |============= -->
+    <div class="button-group">
+        <button id="printBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-arrow-down-to-line preview-icon">
+                <path d="M12 17V3" />
+                <path d="m6 11 6 6 6-6" />
+                <path d="M19 21H5" />
+            </svg>
 
-    <header>
-        <h1>Harsh Rajput</h1>
-        <p class="subtext">MERN Stack Developer</p>
-
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <button id="printBtn">Download CV</button>
-            <button id="themeBtn">Theme</button>
-        </nav>
-    </header>
+            Download CV</button>
 
 
-    <!-- =============| ABOUT SECTION |============= -->
-    <section id="about">
-        <h2 class="section-heading">About Me</h2>
-        <p>I like building real things, breaking them, figuring out why they broke, and slowly understanding what's
-            happening underneath the interface.</p>
-    </section>
 
-    <!-- =============| EDUCATION SECTION |============= -->
-    <section>
-        <h2 class="section-heading">Education</h2>
-        <div class="section-item">
-            <div class="section-label">2023-2026</div>
 
-            <div class="data">
-                <h3>B.Sc. in Zoology/Chemistry</h3>
-                <p>Brahma Nand Mahavidyalaya, Rath</p>
+
+        <button id="theme-toggle">
+            <!-- SUN ICON  -->
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-sun preview-icon">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+
+            <!-- MOON ICON  -->
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-moon preview-icon">
+                <path
+                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
+            </svg>
+
+
+        </button>
+    </div>
+
+    <!-- =============| MAIN CONTAINER |============= -->
+
+    <main>
+        <!-- =============| HEADER |============= -->
+
+        <header>
+            <h1>Harsh Rajput</h1>
+            <p class="subtext">MERN Stack Developer</p>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+
+        <!-- =============| ABOUT SECTION |============= -->
+        <section id="about">
+            <h2 class="section-heading">About Me</h2>
+            <p>I like building real things, breaking them, figuring out why they broke, and slowly understanding what's
+                happening underneath the interface.</p>
+        </section>
+
+        <!-- =============| EDUCATION SECTION |============= -->
+        <section>
+            <h2 class="section-heading">Education</h2>
+            <div class="section-item">
+                <div class="section-label">2023-2026</div>
+
+                <div class="data">
+                    <h3>B.Sc. in Zoology/Chemistry</h3>
+                    <p>Brahma Nand Mahavidyalaya, Rath</p>
+                </div>
             </div>
-        </div>
 
-        <div class="section-item">
-            <div class="section-label">2021-2023</div>
+            <div class="section-item">
+                <div class="section-label">2021-2023</div>
 
-            <div class="data">
-                <h3>Higher Secondary</h3>
-                <p>Seth Chhoteylal Academy, Rath</p>
+                <div class="data">
+                    <h3>Higher Secondary</h3>
+                    <p>Seth Chhoteylal Academy, Rath</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
 
@@ -68,114 +113,117 @@
 
 
 
-    <!-- =============| EXPERIENCE SECTION |============= -->
-    <section>
-        <h2 class="section-heading">Experience</h2>
-        <div class="section-item">
-            <div class="section-label">March 2026</div>
+        <!-- =============| EXPERIENCE SECTION |============= -->
+        <section>
+            <h2 class="section-heading">Experience</h2>
+            <div class="section-item">
+                <div class="section-label">March 2026</div>
 
-            <div class="data">
-                <h3>First explored web development</h3>
-                <p>Started learning HTML and CSS</p>
+                <div class="data">
+                    <h3>First explored web development</h3>
+                    <p>Started learning HTML and CSS</p>
+                </div>
             </div>
-        </div>
 
-        <div class="section-item">
-            <div class="section-label">April 2026</div>
+            <div class="section-item">
+                <div class="section-label">April 2026</div>
 
-            <div class="data">
-                <h3>Started Learning Web Development</h3>
-                <p>Started learning about web development technologies online</p>
+                <div class="data">
+                    <h3>Started Learning Web Development</h3>
+                    <p>Started learning about web development technologies online</p>
+                </div>
             </div>
-        </div>
 
 
-        <div class="section-item">
-            <div class="section-label">October 2026</div>
+            <div class="section-item">
+                <div class="section-label">October 2026</div>
 
-            <div class="data">
-                <h3>Started Internship</h3>
-                <p>Started Internship to gain actual experience in web development</p>
+                <div class="data">
+                    <h3>Started Internship</h3>
+                    <p>Started Internship to gain actual experience in web development</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
 
 
 
-    <!-- =============| SKILLs SECTION |============= -->
-    <section>
-        <h2 class="section-heading">Skills</h2>
+        <!-- =============| SKILLs SECTION |============= -->
+        <section>
+            <h2 class="section-heading">Skills</h2>
 
-        <table>
-            <tr>
-                <th>Frontend</th>
-                <td>HTML, CSS, JavaScript, TypeScript, React, Tailwind CSS, Vite</td>
-            </tr>
-            <tr>
-                <th>Backend</th>
-                <td>Node.js, Express</td>
-            </tr>
-            <tr>
-                <th>Database</th>
-                <td>MongoDB</td>
-            </tr>
-            <tr>
-                <th>Tools</th>
-                <td>Git, GitHub, VS Code, Postman</td>
-            </tr>
-        </table>
-    </section>
+            <table>
+                <tr>
+                    <th>Frontend</th>
+                    <td>HTML, CSS, JavaScript, TypeScript, React, Tailwind CSS, Vite</td>
+                </tr>
+                <tr>
+                    <th>Backend</th>
+                    <td>Node.js, Express</td>
+                </tr>
+                <tr>
+                    <th>Database</th>
+                    <td>MongoDB</td>
+                </tr>
+                <tr>
+                    <th>Tools</th>
+                    <td>Git, GitHub, VS Code, Postman</td>
+                </tr>
+            </table>
+        </section>
 
-    <!-- =============| PROJECT SECTION |============= -->
-    <section>
-        <h2 class="section-heading">PROJECTS</h2>
+        <!-- =============| PROJECT SECTION |============= -->
+        <section>
+            <h2 class="section-heading">PROJECTS</h2>
 
-        <div class="section-item">
-            <div class="section-label">In-development</div>
+            <div class="section-item">
+                <div class="section-label">In-development</div>
 
-            <div class="data">
-                <h3>StackVibe</h3>
-                <p>An AI-powered website builder that generates web applications from user prompts</p>
+                <div class="data">
+                    <h3>StackVibe</h3>
+                    <p>An AI-powered website builder that generates web applications from user prompts</p>
+                </div>
             </div>
-        </div>
 
 
-        <div class="section-item">
-            <div class="section-label">July - Sep 2026</div>
+            <div class="section-item">
+                <div class="section-label">July - Sep 2026</div>
 
-            <div class="data">
-                <h3>ShopHive</h3>
-                <p>A full-stack multi-vendor ecommmerce platform using MERN Stack</p>
+                <div class="data">
+                    <h3>ShopHive</h3>
+                    <p>A full-stack multi-vendor ecommmerce platform using MERN Stack</p>
+                </div>
             </div>
-        </div>
 
 
 
-        <div class="section-item">
-            <div class="section-label">Sep 2026</div>
+            <div class="section-item">
+                <div class="section-label">Sep 2026</div>
 
-            <div class="data">
-                <h3>LiveInk</h3>
-                <p>A real-time collaborative document editor platform built using liveblocks</p>
+                <div class="data">
+                    <h3>LiveInk</h3>
+                    <p>A real-time collaborative document editor platform built using liveblocks</p>
+                </div>
             </div>
-        </div>
 
-    </section>
-
-
-    <!-- =============| CONTACT SECTION |============= -->
-    <section>
-        <h2 class="section-heading">Contact</h2>
-        <div class="contact-links">
-            <a target="_blank" href="mailto:harshrajput.dev@proton.me">Email</a>
-            <a target="_blank" href="https://github.com/harshrajput-0">GitHub</a>
-            <a target="_blank" href="https://www.linkedin.com/in/harshrajput0426">LinkedIn</a>
-        </div>
-    </section>
+        </section>
 
 
+        <!-- =============| CONTACT SECTION |============= -->
+        <section>
+            <h2 class="section-heading">Contact</h2>
+            <div class="contact-links">
+                <a target="_blank" href="mailto:harshrajput.dev@proton.me">Email</a>
+                <a target="_blank" href="https://github.com/harshrajput-0">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/harshrajput0426">LinkedIn</a>
+            </div>
+        </section>
+
+        <!-- FOOTER  -->
+        <footer>© 2026 Harsh Rajput</footer>
+
+    </main>
     <script src="/ResumePage/script.js"></script>
 </body>
 

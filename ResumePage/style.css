@@ -11,9 +11,26 @@
   --text: #222222;
   --text-secondary: #7a7a7a;
 
-  --primary: #3b6e8f;
+  --shadow: #bebebe;
 
-  --border: #ececec;
+  --primary: #3b85b7;
+
+  --border: #ccc8c8;
+}
+
+
+body.dark {
+  --bg: #141414;
+  --bg-hover: #1c1c1c;
+
+  --text: #e8e8e8;
+  --text-secondary: #8d8d8d;
+
+  --shadow: #3f3f3f;
+
+  --primary: #3b85b7;
+
+  --border: #3a3a3a;
 }
 
 body {
@@ -26,8 +43,11 @@ body {
     "Segoe UI",
     Arial,
     sans-serif;
+
+  transition: all 0.3s ease;
 }
 
+/* HTML ELEMENT CSS */
 a {
   text-decoration: none;
   color: inherit;
@@ -46,25 +66,87 @@ button:hover {
   color: var(--primary);
 }
 
+/* =========== MAIN CONTAINER ============= */
+.button-group {
+  display: flex;
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  gap: 16px;
+}
+
+.button-group button {
+  color: var(--text);
+  background-color: var(--bg);
+  padding: 8px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--border);
+  /* box-shadow: 0 3px 8px var(--shadow); */
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.button-group button:hover {
+  border-color: var(--pri);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+/* Print Button  */
+#printBtn {
+  padding: 8px 12px;
+}
+
+/* Icons  */
+svg {
+  width: 20px;
+}
+
+/* Theme Switching */
+body .sun-icon,
+body.dark .moon-icon {
+  display: block;
+}
+
+body .moon-icon,
+body.dark .sun-icon {
+  display: none;
+}
+
+/* =========== MAIN CONTAINER ============= */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 64px 24px 20px;
+}
+
 h1 {
   font-size: 40px;
+  margin-bottom: 2px;
 }
 
 .subtext {
   color: var(--text-secondary);
+  margin-bottom: 38px;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  margin: 16px 0;
-  justify-content: space-evenly;
+  margin-bottom: 38px;
+  gap: 28px;
 }
 
-/* =========== SECTIONS ============= */
+/* =========== SECTIONS ------------ */
 section {
   padding: 44px 0;
-  border: 1px solid var(--border);
+  border-top: 1px solid var(--border);
 }
 
 section p {
@@ -87,6 +169,7 @@ section p {
   gap: 20px;
   padding: 24px 8px;
 }
+
 .section-item:hover {
   background-color: var(--bg-hover);
 }
@@ -99,9 +182,11 @@ section p {
 .data h3 {
   font-size: 20px;
 }
+
 .section-item:hover h3 {
   color: var(--primary);
 }
+
 .data p {
   color: var(--text-secondary);
   font-size: 15px;
@@ -109,40 +194,78 @@ section p {
   padding: 0;
 }
 
-
-
-/* =========== TABLE ============= */
+/* ------------ TABLE (Skill Seciton) ------------ */
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-th, td {
-    text-align: left;
-    padding: 10px 18px;
-    border-bottom: 1px solid var(--border);
+th,
+td {
+  text-align: left;
+  padding: 10px 18px;
+  border-bottom: 1px solid var(--border);
 }
 
-tr:last-child th, tr:last-child td{
-    border-bottom: none;
+tr:last-child th,
+tr:last-child td {
+  border-bottom: none;
 }
 
 tr:hover {
-    background-color: var(--bg-hover);
+  background-color: var(--bg-hover);
 }
 
 tr:hover td {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 .contact-links {
-    margin-top: 24px;
+  margin-top: 24px;
 }
-.contact-links a{
-    display: inline-block;
-    border-bottom: 1px solid var(--border);
-    margin-left: 14px;
+.contact-links a {
+  display: inline-block;
+  border-bottom: 1px solid var(--border);
+  margin-left: 14px;
 }
 .contact-links a:hover {
-    border-bottom-color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+footer {
+  padding: 20px 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Excluduing Elements from print  */
+@media print {
+  nav,
+  footer,
+  .button-group {
+    display: none;
+  }
+}
+
+
+/* Small Devices Responsiveness */
+@media (max-width: 560px) {
+  nav {
+    display: none;
+  }
+  .section-label {
+    padding: 8px 0;
+  }
+  .section-item {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .data h3 {
+    margin-bottom: 6px;
+  }
+
+  th {
+    width: 95px;
+  }
 }
