@@ -18,6 +18,9 @@
   --border: #ccc8c8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body.dark {
   --bg: #141414;
@@ -246,7 +249,6 @@ footer {
     display: none;
   }
 }
-
 
 /* Small Devices Responsiveness */
 @media (max-width: 560px) {
