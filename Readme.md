@@ -9,6 +9,9 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 1 | Portfolio Card | 02 October 2026 | HTML, CSS             |
 | Task 2 | Resume Page    | 04 October 2026 | HTML, CSS, JavaScript |
 
+
+
+<br>
 ## Task 1 — Portfolio Card
 
 A responsive portfolio card built with HTML, CSS, and JavaScript to showcase personal details, skills, projects, and contact information in an attractive design.
@@ -16,12 +19,19 @@ A responsive portfolio card built with HTML, CSS, and JavaScript to showcase per
 * **Date:** 02 October 2026
 * **Live Demo:** [Portfolio Card](https://portfolio-card-hr.netlify.app/)
 
+
+<br>
+
 ## Task 2 — Resume Page
 
 A clean and responsive personal CV/resume webpage built using HTML, CSS, and JavaScript to showcase education, skills, experience, projects, and contact details.
 
 * **Date:** 04 October 2026
 * **Live Demo:** [Resume Page](https://resume-page-hr.netlify.app/)
+
+
+
+<br>
 
 ## Technologies Used
 
