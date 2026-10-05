@@ -12,6 +12,7 @@ This repository contains the frontend projects completed as part of my frontend 
 
 
 <br>
+
 ## Task 1 — Portfolio Card
 
 A responsive portfolio card built with HTML, CSS, and JavaScript to showcase personal details, skills, projects, and contact information in an attractive design.
