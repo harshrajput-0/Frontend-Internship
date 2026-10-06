@@ -49,7 +49,7 @@ A responsive navigation bar built using HTML, CSS, and JavaScript that adapts sm
  A responsive pricing cards layout that displays different plans, features, and prices using HTML, CSS, and JavaScript.
 
 * **Date:** 06 October 2026
-* **Live Demo:** [Responsive Navigation](https://pricing-card-section.harshrajput0426.workers.dev/)
+* **Live Demo:** [Pricing Card Section](https://pricing-card-section.harshrajput0426.workers.dev/)
 
 <br>
 
