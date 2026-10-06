@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: rgb(236, 239, 255);
+  --bg-light: rgb(242, 244, 255);
+  --border: #aaacb1;
+  
+  --primary: #595bf1;
+  --primary-hover: #4d4fda;
+  --primary-light: #797bff;
+  --text: rgb(81, 81, 81);
+  --shadow: 0 6px 12px rgba(99, 101, 241, 0.202);
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 1280px;
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.card {
+  width: 320px;
+  aspect-ratio: 8/11;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  padding: 1.6rem;
+  transition: box-shadow 0.3s ease;
+  line-height: 1.6rem;
+  transition: background-color 0.3s ease;
+}
+.card:hover {
+  box-shadow: var(--shadow);
+  background-color: var(--bg-light);
+}
+
+.card-header {
+  text-align: center;
+  font-size: 1rem;
+  padding: 20px 0 16px;
+  letter-spacing: 1px;
+}
+
+.plan-name {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.plan-price {
+    font-size: 1.8rem;
+    font-weight: 650;
+}
+
+.plan-fetures {
+  list-style: none;
+  text-align: left;
+  margin: 14px 0 38px;
+}
+.plan-fetures li::before {
+  content: "✓";
+  margin-right: 10px;
+  color: var(--primary);
+}
+
+button {
+  padding: 10px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--bg);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+
+#popular {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--bg);
+  position: relative;
+  transform: scale(1.1);
+  transition: background-color 0.3s ease;
+}
+
+#popular:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+#popular button {
+  background-color: var(--bg-light);
+  color: var(--primary);
+}
+
+#popular button:hover {
+  background-color: var(--bg);
+}
+
+#popular .plan-fetures li::before {
+  color: var(--bg);
+}
+
+#popular::after {
+  content: "Recommanded";
+  font-size: 11px;
+  padding: 2px 12px;
+  background-color: var(--primary-light);
+  border-radius: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  top: -12px;
+  left: 28px;
+}
