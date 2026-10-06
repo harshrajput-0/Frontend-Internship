@@ -9,6 +9,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 1 | Portfolio Card       | 02 October 2026 | HTML, CSS             |
 | Task 2 | Resume Page          | 04 October 2026 | HTML, CSS, JavaScript |
 | Task 3 | ResponsiveNavigation | 05 October 2026 | HTML, CSS, JavaScript |
+| Task 4 | PricingCardSection   | 06 October 2026 | HTML, CSS, JavaScript |
 
 
 
@@ -40,6 +41,15 @@ A responsive navigation bar built using HTML, CSS, and JavaScript that adapts sm
 * **Date:** 05 October 2026
 * **Live Demo:** [Responsive Navigation](https://orbito-responsive-navigation.netlify.app/)
 
+
+<br>
+
+## Task 4 — Pricing Card Section
+
+ A responsive pricing cards layout that displays different plans, features, and prices using HTML, CSS, and JavaScript.
+
+* **Date:** 06 October 2026
+* **Live Demo:** [Responsive Navigation](https://pricing-card-section.harshrajput0426.workers.dev/)
 
 <br>
 
