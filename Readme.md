@@ -4,10 +4,11 @@ This repository contains the frontend projects completed as part of my frontend 
 
 ## Tasks
 
-| Task   | Project        | Date            | Technologies          |
-| ------ | -------------- | --------------- | --------------------- |
-| Task 1 | Portfolio Card | 02 October 2026 | HTML, CSS             |
-| Task 2 | Resume Page    | 04 October 2026 | HTML, CSS, JavaScript |
+| Task   | Project              | Date            | Technologies          |
+| ------ | -------------------- | --------------- | --------------------- |
+| Task 1 | Portfolio Card       | 02 October 2026 | HTML, CSS             |
+| Task 2 | Resume Page          | 04 October 2026 | HTML, CSS, JavaScript |
+| Task 3 | ResponsiveNavigation | 05 October 2026 | HTML, CSS, JavaScript |
 
 
 
@@ -30,6 +31,14 @@ A clean and responsive personal CV/resume webpage built using HTML, CSS, and Jav
 * **Date:** 04 October 2026
 * **Live Demo:** [Resume Page](https://resume-page-hr.netlify.app/)
 
+<br>
+
+## Task 3 — Responsive Navigation
+
+A responsive navigation bar built using HTML, CSS, and JavaScript that adapts smoothly to desktop and mobile screens with a toggle menu.
+
+* **Date:** 05 October 2026
+* **Live Demo:** [Responsive Navigation](https://orbito-responsive-navigation.netlify.app/)
 
 
 <br>

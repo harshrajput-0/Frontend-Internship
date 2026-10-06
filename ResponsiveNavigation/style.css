@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: currentColor;
+}
+
+:root {
+  --bg: #111827;
+  --bg-hover: #1f2533;
+  --text: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --primary: #818cf8;
+  --border: #374151;
+}
+
+html {
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  position: relative;
+  display: flex;
+  padding: 12px 38px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  gap: 6px;
+  text-transform: uppercase;
+}
+
+.logo svg {
+  width: 36px;
+}
+
+#nav-links {
+  display: flex;
+  gap: 24px;
+  color: var(--text-secondary);
+}
+
+#nav-links li a {
+  position: relative;
+}
+
+#nav-links li:hover a {
+  color: var(--primary);
+}
+
+#nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+#nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Hambergur Menu  */
+#menu-button {
+  display: none;
+  width: 42px;
+  aspect-ratio: 1/1;
+  padding: 4px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#menu-button:hover {
+  background-color: var(--bg-hover);
+}
+
+#menu-button svg {
+  width: 28px;
+}
+
+.cross-icon,
+#menu-button.open .menu-icon {
+  display: none;
+}
+
+#menu-button.open .cross-icon {
+  display: block;
+}
+
+/* ---------------| MOBILE SCREEN [BELOW 730PX] |--------------- */
+@media (max-width: 730px) {
+  nav {
+    padding: 8px 18px;
+  }
+
+  /* Navigation links */
+  #nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--bg);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  /* Navigation Links in opne state */
+  #nav-links.open {
+    max-height: 300px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  #nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav-links li:hover {
+    background-color: var(--bg-hover);
+  }
+
+  #nav-links a {
+    display: block;
+    padding: 14px;
+  }
+
+  #nav-links li a::after {
+    display: none;
+  }
+
+/* Menu Button  */
+    #menu-button {
+    display: flex;
+  }
+}
