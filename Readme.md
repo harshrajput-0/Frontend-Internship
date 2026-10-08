@@ -10,6 +10,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 2 | Resume Page          | 04 October 2026 | HTML, CSS, JavaScript |
 | Task 3 | ResponsiveNavigation | 05 October 2026 | HTML, CSS, JavaScript |
 | Task 4 | PricingCardSection   | 06 October 2026 | HTML, CSS, JavaScript |
+| Task 5 | TestimonialSection   | 07 October 2026 | HTML, CSS, JavaScript |
 
 
 
@@ -51,6 +52,17 @@ A responsive navigation bar built using HTML, CSS, and JavaScript that adapts sm
 * **Date:** 06 October 2026
 * **Live Demo:** [Pricing Card Section](https://pricing-card-section.harshrajput0426.workers.dev/)
 
+
+<br>
+
+## Task 5  — Testimonial Section
+
+  A responsive and interactive testimonials section built using HTML, CSS, and JavaScript to showcase customer feedback in an attractive card-based layout.
+
+* **Date:** 07 October 2026
+* **Live Demo:** [Testimonial Section](https://testimonial-section.harshrajput0426.workers.dev/)
+
+
 <br>
 
 ## Technologies Used
@@ -59,4 +71,5 @@ A responsive navigation bar built using HTML, CSS, and JavaScript that adapts sm
 * CSS3
 * JavaScript
 * Netlify
+* Cloudflare
 * Git and GitHub
