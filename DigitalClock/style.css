@@ -79,3 +79,17 @@ body {
   border: none;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
+
+
+@media (max-width: 430px) {
+  #clock {
+    transform: scale(0.8);
+  }
+}
+
+
+@media (max-width: 350px) {
+  #clock {
+    transform: scale(0.6);
+  }
+}
