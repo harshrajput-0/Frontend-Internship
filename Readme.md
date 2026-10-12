@@ -12,6 +12,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 4 | PricingCardSection   | 06 October 2026 | HTML, CSS, JavaScript |
 | Task 5 | TestimonialSection   | 07 October 2026 | HTML, CSS, JavaScript |
 | Task 6 | DigitalClock         | 08 October 2026 | HTML, CSS, JavaScript |
+| Task 7 | CurrencyConverter    | 11 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -66,6 +67,15 @@ A real-time digital clock built using HTML, CSS, and JavaScript that dynamically
 
 - **Date:** 08 October 2026
 - **Live Demo:** [Digital Clock](https://digital-clock.harshrajput0426.workers.dev/)
+
+<br>
+
+## Task 7 — CurrencyConverter
+
+A web-based application that converts an amount from one currency to another using real-time exchange rates through an API, built with HTML, CSS, and JavaScript.
+
+- **Date:** 11 October 2026
+- **Live Demo:** [CurrencyConverter](https://currency-converter.harshrajput0426.workers.dev/)
 
 <br>
 
