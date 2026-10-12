@@ -11,14 +11,16 @@ async function loadCurrency() {
         // Sending request
         const response = await fetch(url + "USD");
 
-        // Response JSON
+        // Response in JSON format
         const data = await response.json();
 
+        // Adding currency code as options
         for (const code in data.rates) {
             fromSelect.add(new Option(code, code));
             toSelect.add(new Option(code, code));
         }
 
+        // Default value 
         fromSelect.value = "USD";
         toSelect.value = "INR";
     } catch (error) {
@@ -35,12 +37,18 @@ async function convert() {
     const to = toSelect.value;
 
     try {
+        result.textContent = "sdlfkf"
+        // Send request
         const response = await fetch(url + from);
+
+        // Response in JSON format
         const data = await response.json();
 
+        // Calculate
         const total = (amount * data.rates[to]).toFixed(2);
+
+        // Loading data in result area
         result.textContent = amount + " " + from + " = " + total + " " + to;
-        // result.innerHTML = `${amount} ${from} = ${total} ${to}`;
     } catch (error) {
         result.textContent = "Could not get the rate. Try again.";
     }
@@ -54,4 +62,10 @@ function swap() {
     convert();
 }
 
-loadCurrency();
+// Function to load data on reload rather than empty result area
+async function loadInitial() {
+    await loadCurrency();
+    await convert();
+}
+
+loadInitial();

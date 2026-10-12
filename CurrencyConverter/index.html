@@ -13,23 +13,40 @@
 
 <body>
 
+
+    <!--==============| MAIN CONTAINER |==============-->
     <main class="container">
         <h1>Currncy Converter</h1>
-
+        <label for="amount">Amount</label>
         <input type="number" id="amount" value="1">
 
-        <div>
-            <select name="F" id="from"></select>
+        <!--====== CONVERTER AREA ======-->
+        <div class="converter-area">
+            <div>
+                <label for="from">From</label>
+                <select id="from"></select>
+            </div>
 
             <!-- Swap Button  -->
-            <button onclick="swap()">Swap</button>
-            
-            <select name="T" id="to"></select>
+            <button onclick="swap()" id="swap">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+                    <path d="M0 0h1024v1024H0z" fill="none" />
+                    <path fill="currentColor"
+                        d="M847.9 592H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h605.2L612.9 851c-4.1 5.2-.4 13 6.3 13h72.5c4.9 0 9.5-2.2 12.6-6.1l168.8-214.1c16.5-21 1.6-51.8-25.2-51.8M872 356H266.8l144.3-183c4.1-5.2.4-13-6.3-13h-72.5c-4.9 0-9.5 2.2-12.6 6.1L150.9 380.2c-16.5 21-1.6 51.8 25.1 51.8h696c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8" />
+                </svg>
+
+            </button>
+
+            <div>
+                <label for="to">To</label>
+                <select id="to"></select>
+            </div>
         </div>
 
         <button onclick="convert()">Convert</button>
 
-        <p id="result">ddfd</p>
+        <!-- Result Area -->
+        <p id="result"></p>
     </main>
 
     <script src="script.js"></script>
