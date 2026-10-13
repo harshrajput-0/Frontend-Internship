@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+:root {
+  --text: #111827;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --primary: #2563eb;
+  --primary-hover: #0040cb;
+  --bg: #f5f6f8;
+  --card: #fff;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  --danger: rgb(223, 56, 56);
+  --danger-bg: rgba(255, 95, 95, 0.179);
+}
+
+body {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  /* background-color: burlywood; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header,
+#form,
+.container ul {
+  background-color: var(--card);
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.header h1 {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.header p {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 4px 0 8px;
+}
+
+.header .counter {
+  color: var(--text);
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.header {
+  padding-bottom: 10px;
+}
+
+/* ______________________________________________ */
+/* ================| INPUT FORM |================ */
+
+form {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+button {
+  padding: 8px 14px;
+  font-size: 16px;
+  /* background-color: red; */
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+input:focus-visible,
+button:focus-visible {
+  border: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--bg);
+  font-width: 600;
+  letter-spacing: 1px;
+  display: inline;
+}
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* ________________________________________________ */
+/* ================| EXPENSE LIST |================ */
+#list {
+  padding: 0;
+  overflow: hidden;
+}
+
+.eitem {
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.eitem:hover {
+  background-color: var(--bg);
+}
+
+.ename {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eitem button {
+  padding: 0;
+  font-size: 18px;
+  background-color: var(--card);
+  color: var(--text);
+  aspect-ratio: 1/1;
+  width: 40px;
+  margin-left: 4px;
+  border: 1px solid var(--border);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.eitem:hover button {
+  border-color: var(--text-muted);
+}
+
+button svg {
+  width: 20px;
+}
+
+.eitem button:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+  background-color: var(--danger-bg);
+}
