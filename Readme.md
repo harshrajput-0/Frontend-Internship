@@ -13,6 +13,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 5 | TestimonialSection   | 07 October 2026 | HTML, CSS, JavaScript |
 | Task 6 | DigitalClock         | 08 October 2026 | HTML, CSS, JavaScript |
 | Task 7 | CurrencyConverter    | 11 October 2026 | HTML, CSS, JavaScript |
+| Task 8 | ExpenseTracker       | 13 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -70,12 +71,21 @@ A real-time digital clock built using HTML, CSS, and JavaScript that dynamically
 
 <br>
 
-## Task 7 — CurrencyConverter
+## Task 7 — Currency Converter
 
 A web-based application that converts an amount from one currency to another using real-time exchange rates through an API, built with HTML, CSS, and JavaScript.
 
 - **Date:** 11 October 2026
 - **Live Demo:** [CurrencyConverter](https://currency-converter.harshrajput0426.workers.dev/)
+
+<br>
+
+## Task 8 — Expense Tracker
+
+A web application that allows users to add, view, and delete expenses while dynamically calculating the total amount using HTML, CSS, and JavaScript.
+
+- **Date:** 13 October 2026
+- **Live Demo:** [ExpenseTracker](https://expense-tracker.harshrajput0426.workers.dev/)
 
 <br>
 
