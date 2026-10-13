@@ -1,3 +1,4 @@
+// Getting Elements 
 const title = document.getElementById("title")
 const amount = document.getElementById("amount");
 
@@ -5,29 +6,47 @@ const list = document.getElementById("list");
 const total = document.getElementById("total");
 const form = document.getElementById("form");
 
-let items = [];
+
+// Loading saved array, if not saved load empty array
+let items = JSON.parse(localStorage.getItem("items")) || [];
+
+// Save to localstorage
+function save() {
+    localStorage.setItem("items", JSON.stringify(items));
+}
 
 
-
+// Submitting new Expense
 form.onsubmit = (e) => {
+    // Prevent reload
     e.preventDefault();
+
+    // check values 
     if (!title.value || amount.value <= 0) {
         return;
     }
 
+    // Push data into array 
     items.push({ title: title.value, amount: Number(amount.value) });
+
+    // Save to localStorage before updating UI
+    save();
 
     // Clearing the fields 
     title.value = amount.value = "";
     show()
 }
 
+
+// Remove the li element
 function remove(i) {
     items.splice(i, 1);
+    save();
     show();
 }
 
 
+// Update UI
 function show() {
     list.innerHTML = items.map((x, i) => `<li class="eitem">
     <span class="ename">${x.title}</span><span class='amount'>₹${x.amount}</span><button
@@ -43,3 +62,6 @@ function show() {
     // Updating Value
     total.textContent = items.reduce((sum, x) => sum + x.amount, 0)
 }
+
+
+show();

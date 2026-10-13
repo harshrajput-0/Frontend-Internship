@@ -27,6 +27,7 @@ body {
   font-family: Inter, system-ui, sans-serif;
 }
 
+/* MAIN CONTAINER  */
 .container {
   max-width: 600px;
   width: 100%;
@@ -36,6 +37,7 @@ body {
   gap: 20px;
 }
 
+/* HEADER  */
 .header,
 #form,
 .container ul {
@@ -114,6 +116,8 @@ button:hover {
   overflow: hidden;
 }
 
+
+/* li tag  */
 .eitem {
   padding: 12px 18px;
   display: flex;
@@ -126,6 +130,7 @@ button:hover {
 .eitem:hover {
   background-color: var(--bg);
 }
+
 
 .ename {
   width: 100%;
@@ -152,6 +157,7 @@ button:hover {
   border-color: var(--text-muted);
 }
 
+/* Icon  */
 button svg {
   width: 20px;
 }
