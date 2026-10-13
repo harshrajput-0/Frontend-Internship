@@ -116,7 +116,6 @@ button:hover {
   overflow: hidden;
 }
 
-
 /* li tag  */
 .eitem {
   padding: 12px 18px;
@@ -130,7 +129,6 @@ button:hover {
 .eitem:hover {
   background-color: var(--bg);
 }
-
 
 .ename {
   width: 100%;
