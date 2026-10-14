@@ -4,16 +4,17 @@ This repository contains the frontend projects completed as part of my frontend 
 
 ## Tasks
 
-| Task   | Project              | Date            | Technologies          |
-| ------ | -------------------- | --------------- | --------------------- |
-| Task 1 | Portfolio Card       | 02 October 2026 | HTML, CSS             |
-| Task 2 | Resume Page          | 04 October 2026 | HTML, CSS, JavaScript |
-| Task 3 | ResponsiveNavigation | 05 October 2026 | HTML, CSS, JavaScript |
-| Task 4 | PricingCardSection   | 06 October 2026 | HTML, CSS, JavaScript |
-| Task 5 | TestimonialSection   | 07 October 2026 | HTML, CSS, JavaScript |
-| Task 6 | DigitalClock         | 08 October 2026 | HTML, CSS, JavaScript |
-| Task 7 | CurrencyConverter    | 11 October 2026 | HTML, CSS, JavaScript |
-| Task 8 | ExpenseTracker       | 13 October 2026 | HTML, CSS, JavaScript |
+| Task   | Project               | Date            | Technologies          |
+| ------ | --------------------- | --------------- | --------------------- |
+| Task 1 | Portfolio Card        | 02 October 2026 | HTML, CSS             |
+| Task 2 | Resume Page           | 04 October 2026 | HTML, CSS, JavaScript |
+| Task 3 | ResponsiveNavigation  | 05 October 2026 | HTML, CSS, JavaScript |
+| Task 4 | PricingCardSection    | 06 October 2026 | HTML, CSS, JavaScript |
+| Task 5 | TestimonialSection    | 07 October 2026 | HTML, CSS, JavaScript |
+| Task 6 | DigitalClock          | 08 October 2026 | HTML, CSS, JavaScript |
+| Task 7 | CurrencyConverter     | 11 October 2026 | HTML, CSS, JavaScript |
+| Task 8 | ExpenseTracker        | 13 October 2026 | HTML, CSS, JavaScript |
+| Task 9 | CountryInformationApp | 13 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -88,6 +89,15 @@ A web application that allows users to add, view, and delete expenses while dyna
 - **Live Demo:** [ExpenseTracker](https://expense-tracker.harshrajput0426.workers.dev/)
 
 <br>
+
+## Task 9 — Country Information App
+
+A web application that retrieves and displays country information using an external API. It allows users to explore country details through a dynamic interface.
+
+- **Date:** 13 October 2026
+- **Live Demo:** [Country Information App](https://country-information-app.harshrajput0426.workers.dev/)
+
+**Note:** The deployed version uses an API with a limited monthly request quota (1,000 requests). Replace `your_restcountries_api_key` with your own API key and configure the permitted frontend origin in the API settings to avoid CORS errors.
 
 ## Technologies Used
 
