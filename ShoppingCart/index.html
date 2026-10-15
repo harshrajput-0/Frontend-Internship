@@ -13,9 +13,11 @@
 
 <body>
     <main>
+        <!-- HEADER -->
         <h1>Product Cart</h1>
         <p class="subtitle"></p>
 
+        <!--============= PRODUCT FORM =============-->
         <form class="product-input card" id="input-form">
             <div class="row">
                 <input type="text" id="name" placeholder="Product Name">
@@ -28,45 +30,21 @@
             </div>
         </form>
 
-        <!-- LIST  -->
+
+        <!--============= LIST =============-->
         <div class="card" id="list">
             <div class="list">
-                <div class="item">
-                    <div class="item-name">Nam</div>
-                    <div class="item-price">84 for each</div>
-                </div>
-
-                <div class="qty-box">
-                    <button class="qty-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-minus preview-icon">
-                            <path d="M5 12h14" />
-                        </svg>
-                    </button>
-                    <span>01</span>
-                    <button class="qty-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-plus preview-icon">
-                            <path d="M5 12h14" />
-                            <path d="M12 5v14" />
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="item-total">$898</div>
-
-                <button class="remove-btn">Remove</button>
+                <p class="empty-message">Your cart is empty. Add a product above.</p>
             </div>
+
         </div>
 
 
 
 
-        <!-- SUMMARY CARD  -->
+        <!--============= SUMMARY CARD =============-->
         <div class="summary card">
-            <div>
+            <div id="summary">
                 <div id="item-count">0 items</div>
                 <div id="total">$0.00</div>
             </div>

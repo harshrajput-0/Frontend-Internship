@@ -26,11 +26,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* ============ MAIN CONTAINER ============ */
 main {
   max-width: 600px;
   width: 100%;
 }
 
+/* Card ---------- */
 .card {
   width: 100%;
   background-color: var(--card);
@@ -71,6 +73,7 @@ button {
   color: white;
   outline: none;
   border: 1px solid var(--border);
+  cursor: pointer;
   border-radius: 6px;
   transition:
     border-color 0.2s ease,
@@ -79,109 +82,105 @@ button {
 
 /* PRIMARY BUTTON */
 .primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 .primary:hover {
   background-color: var(--primary-hover);
   border-color: var(--primary-hover);
 }
 
+/* ================= LIST CONTAINER ==================== */
+#list {
+  padding: 10px 20px;
+}
 
-/* ================= LSIT ==================== */
-
+/* List Item --------------  */
 .list {
-    display: flex;
-    /* background-color: red; */
-    align-items: center;
-    border-bottom: 1px solid var(--border);
-    padding: 16px 2px;
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  padding: 16px 6px;
+}
+.list:not(:last-child) {
+  border-bottom: 1px solid var(--border);
 }
 
 .item {
-    flex: 1;
+  flex: 1;
 }
 .item-name {
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 2px;
 }
 .item-price {
-    color: var(--muted);
-    font-size: 14px;
+  color: var(--muted);
+  font-size: 14px;
 }
 
+/* Quantity Buttons ----------- */
 .qty-box {
-    display: flex;
-    gap: 8px;
-    align-items: center;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 .qty-btn {
-    width: 28px;
-    height: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px;
-    cursor: pointer;
-    border-color: var(--card);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  cursor: pointer;
+  border-color: var(--card);
 }
 .qty-btn:hover {
-    border-color: var(--border);
+  border-color: var(--border);
 }
 
 svg {
-    width: 12px;
+  width: 12px;
 }
 
 .item-total {
-    margin: 0 18px;
+  margin: 0 18px;
+  min-width: 70px;
+  text-align: right;
 }
 
-.remove-btn{
-    border: none;
-    background-color: var(--card);
-    color: var(--danger);
-    cursor: pointer;
+.remove-btn {
+  border: none;
+  background-color: var(--card);
+  color: var(--danger);
+  cursor: pointer;
 }
 
-
-/* ========================================== */
+/* =================== SUMMARY CONTAINER ======================= */
 
 .summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #item-count {
-    color: var(--muted);
-    font-size: 16px;
-    margin-bottom: 4px;
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 4px;
 }
 #total {
-    font-size: 22px;
-    color: var(--text);
-    font-weight: 700;
+  font-size: 22px;
+  color: var(--text);
+  font-weight: 700;
 }
 
 #clear-btn {
-    padding: 8pointerpx 12px;
-    background-color: var(--card);
-    border-color: var(--danger);
-    color: var(--danger);
-    cursor: pointer;
+  padding: 8pointerpx 12px;
+  background-color: var(--card);
+  border-color: var(--danger);
+  color: var(--danger);
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-inner-spin-button,
@@ -190,7 +189,11 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
+/* Empty Message --------------- */
+.empty-message {
+  width: 100%;
+  text-align: center;
+  padding: 16px 6px;
+  font-size: 14px;
+  color: var(--muted);
 }
