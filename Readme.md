@@ -4,17 +4,18 @@ This repository contains the frontend projects completed as part of my frontend 
 
 ## Tasks
 
-| Task   | Project               | Date            | Technologies          |
-| ------ | --------------------- | --------------- | --------------------- |
-| Task 1 | Portfolio Card        | 02 October 2026 | HTML, CSS             |
-| Task 2 | Resume Page           | 04 October 2026 | HTML, CSS, JavaScript |
-| Task 3 | ResponsiveNavigation  | 05 October 2026 | HTML, CSS, JavaScript |
-| Task 4 | PricingCardSection    | 06 October 2026 | HTML, CSS, JavaScript |
-| Task 5 | TestimonialSection    | 07 October 2026 | HTML, CSS, JavaScript |
-| Task 6 | DigitalClock          | 08 October 2026 | HTML, CSS, JavaScript |
-| Task 7 | CurrencyConverter     | 11 October 2026 | HTML, CSS, JavaScript |
-| Task 8 | ExpenseTracker        | 13 October 2026 | HTML, CSS, JavaScript |
-| Task 9 | CountryInformationApp | 13 October 2026 | HTML, CSS, JavaScript |
+| Task    | Project               | Date            | Technologies          |
+| ------  | --------------------- | --------------- | --------------------- |
+| Task 1  | Portfolio Card        | 02 October 2026 | HTML, CSS             |
+| Task 2  | Resume Page           | 04 October 2026 | HTML, CSS, JavaScript |
+| Task 3  | ResponsiveNavigation  | 05 October 2026 | HTML, CSS, JavaScript |
+| Task 4  | PricingCardSection    | 06 October 2026 | HTML, CSS, JavaScript |
+| Task 5  | TestimonialSection    | 07 October 2026 | HTML, CSS, JavaScript |
+| Task 6  | DigitalClock          | 08 October 2026 | HTML, CSS, JavaScript |
+| Task 7  | CurrencyConverter     | 11 October 2026 | HTML, CSS, JavaScript |
+| Task 8  | ExpenseTracker        | 13 October 2026 | HTML, CSS, JavaScript |
+| Task 9  | CountryInformationApp | 13 October 2026 | HTML, CSS, JavaScript |
+| Task 10 | WeatherApp            | 14 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -98,6 +99,17 @@ A web application that retrieves and displays country information using an exter
 - **Live Demo:** [Country Information App](https://country-information-app.harshrajput0426.workers.dev/)
 
 **Note:** The deployed version uses an API with a limited monthly request quota (1,000 requests). Replace `your_restcountries_api_key` with your own API key and configure the permitted frontend origin in the API settings to avoid CORS errors.
+
+<br>
+
+## Task 10 — Weather App
+
+A web application that fetches real-time weather information such as temperature, humidity, and weather conditions from a weather API using HTML, CSS, and JavaScript.
+
+- **Date:** 14 October 2026
+- **Live Demo:** [Weather App](https://weather-app.harshrajput0426.workers.dev/)
+
+**Note:** The deployed version uses an API with a limited daily request quota (1,000 requests). Replace `YOUR_OPENWEATHER_API_KEY` with your own API key.
 
 ## Technologies Used
 
