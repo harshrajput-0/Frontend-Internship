@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Shopping Cart - HTML CSS and JavaScript</title>
+</head>
+
+<body>
+    <main>
+        <h1>Product Cart</h1>
+        <p class="subtitle"></p>
+
+        <form class="product-input card" id="input-form">
+            <div class="row">
+                <input type="text" id="name" placeholder="Product Name">
+                <input type="number" id="price" placeholder="Price" min="1">
+            </div>
+
+            <div class="row">
+                <input type="number" id="qty" placeholder="Quentity" min="1">
+                <button id="add-btn" type="submit" class="primary">Add</button>
+            </div>
+        </form>
+
+        <!-- LIST  -->
+        <div class="card" id="list">
+            <div class="list">
+                <div class="item">
+                    <div class="item-name">Nam</div>
+                    <div class="item-price">84 for each</div>
+                </div>
+
+                <div class="qty-box">
+                    <button class="qty-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-minus preview-icon">
+                            <path d="M5 12h14" />
+                        </svg>
+                    </button>
+                    <span>01</span>
+                    <button class="qty-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-plus preview-icon">
+                            <path d="M5 12h14" />
+                            <path d="M12 5v14" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="item-total">$898</div>
+
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+
+
+
+        <!-- SUMMARY CARD  -->
+        <div class="summary card">
+            <div>
+                <div id="item-count">0 items</div>
+                <div id="total">$0.00</div>
+            </div>
+
+            <button id="clear-btn">Clear Card</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
