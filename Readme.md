@@ -5,7 +5,7 @@ This repository contains the frontend projects completed as part of my frontend 
 ## Tasks
 
 | Task    | Project               | Date            | Technologies          |
-| ------  | --------------------- | --------------- | --------------------- |
+| ------- | --------------------- | --------------- | --------------------- |
 | Task 1  | Portfolio Card        | 02 October 2026 | HTML, CSS             |
 | Task 2  | Resume Page           | 04 October 2026 | HTML, CSS, JavaScript |
 | Task 3  | ResponsiveNavigation  | 05 October 2026 | HTML, CSS, JavaScript |
@@ -16,6 +16,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 8  | ExpenseTracker        | 13 October 2026 | HTML, CSS, JavaScript |
 | Task 9  | CountryInformationApp | 13 October 2026 | HTML, CSS, JavaScript |
 | Task 10 | WeatherApp            | 14 October 2026 | HTML, CSS, JavaScript |
+| Task 11 | ShoppingCart          | 15 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -78,7 +79,7 @@ A real-time digital clock built using HTML, CSS, and JavaScript that dynamically
 A web-based application that converts an amount from one currency to another using real-time exchange rates through an API, built with HTML, CSS, and JavaScript.
 
 - **Date:** 11 October 2026
-- **Live Demo:** [CurrencyConverter](https://currency-converter.harshrajput0426.workers.dev/)
+- **Live Demo:** [Currency Converter](https://currency-converter.harshrajput0426.workers.dev/)
 
 <br>
 
@@ -87,7 +88,7 @@ A web-based application that converts an amount from one currency to another usi
 A web application that allows users to add, view, and delete expenses while dynamically calculating the total amount using HTML, CSS, and JavaScript.
 
 - **Date:** 13 October 2026
-- **Live Demo:** [ExpenseTracker](https://expense-tracker.harshrajput0426.workers.dev/)
+- **Live Demo:** [Expense Tracker](https://expense-tracker.harshrajput0426.workers.dev/)
 
 <br>
 
@@ -110,6 +111,17 @@ A web application that fetches real-time weather information such as temperature
 - **Live Demo:** [Weather App](https://weather-app.harshrajput0426.workers.dev/)
 
 **Note:** The deployed version uses an API with a limited daily request quota (1,000 requests). Replace `YOUR_OPENWEATHER_API_KEY` with your own API key.
+
+<br>
+
+## Task 11 — Shopping Cart
+
+A dynamic web application that allows users to add or remove products, manage quantities, and automatically calculate the total price using HTML, CSS, and JavaScript.
+
+- **Date:** 15 October 2026
+- **Live Demo:** [Shopping Cart](https://shopping-cart.harshrajput0426.workers.dev/)
+
+<br>
 
 ## Technologies Used
 
