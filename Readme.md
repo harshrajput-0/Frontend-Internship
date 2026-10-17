@@ -17,6 +17,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 9  | CountryInformationApp | 13 October 2026 | HTML, CSS, JavaScript |
 | Task 10 | WeatherApp            | 14 October 2026 | HTML, CSS, JavaScript |
 | Task 11 | ShoppingCart          | 15 October 2026 | HTML, CSS, JavaScript |
+| Task 12 | AppointmentBookingApp | 16 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -120,6 +121,15 @@ A dynamic web application that allows users to add or remove products, manage qu
 
 - **Date:** 15 October 2026
 - **Live Demo:** [Shopping Cart](https://shopping-cart.harshrajput0426.workers.dev/)
+
+<br>
+
+## Task 12 — Appointment Booking App
+
+A user-friendly website that allows patients to view doctors, check available services, and book appointments using HTML, CSS, and JavaScript.
+
+- **Date:** 16 October 2026
+- **Live Demo:** [Appointment Booking App](https://appointment-booking-app.harshrajput0426.workers.dev/)
 
 <br>
 
