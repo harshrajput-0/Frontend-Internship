@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Appointment Booking App</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="site-name">ClinicCare</h1>
+    </header>
+    <main>
+        <!--============= DOCTOR SECTION =============-->
+        <section>
+            <h2 class="section-heading">Our Doctors</h2>
+            <div class="card-container" id="doctor-card"></div>
+        </section>
+
+        <!--============= SERVICE SECTION =============-->
+        <section>
+            <h2 class="section-heading">Available Services</h2>
+            <div class="card-container" id="sercive-card"></div>
+        </section>
+
+
+        <!--============= APPOINTMENT FORM =============-->
+        <section id="booksec">
+            <h2 class="section-heading">Book an Appointment</h2>
+            <div class="form-container">
+
+                <form id="bookingForm">
+                    <label>Your name <input type="text" id="fullName" placeholder="e.g. Anita Sharma"></label>
+
+                    <label>Phone <input type="tel" id="phone" placeholder="10-digit number"></label>
+
+                    <label>Doctor <select id="doctorSelect"></select></label>
+
+                    <label>Service <select id="serviceSelect"></select></label>
+
+                    <label>Date <input type="date" id="date"></label>
+
+                    <label>Time <select id="time"></select></label>
+
+                    <button class="form-btn" type="submit">Confirm Booking</button>
+                    <div class="msg" id="message"></div>
+                </form>
+            </div>
+        </section>
+
+
+
+        <!--============= APPOINTMENT LIST SECTION =============-->
+        <section>
+            <h2 class="section-heading">My Appointments</h2>
+            <ul id="appointment-list">
+
+            </ul>
+        </section>
+    </main>
+
+
+    <!--============= FOOTER =============-->
+    <footer>
+        <h1 class="site-name">ClinicCare</h1>
+        <span>© 2026 CareLink Clinic · Open Mon–Sat, 9 AM – 5 PM</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
