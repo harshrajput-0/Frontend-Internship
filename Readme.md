@@ -18,6 +18,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 10 | WeatherApp            | 14 October 2026 | HTML, CSS, JavaScript |
 | Task 11 | ShoppingCart          | 15 October 2026 | HTML, CSS, JavaScript |
 | Task 12 | AppointmentBookingApp | 16 October 2026 | HTML, CSS, JavaScript |
+| Task 13 | OrbitoAcademy         | 18 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -130,6 +131,15 @@ A user-friendly website that allows patients to view doctors, check available se
 
 - **Date:** 16 October 2026
 - **Live Demo:** [Appointment Booking App](https://appointment-booking-app.harshrajput0426.workers.dev/)
+
+<br>
+
+## Task 13 — Orbito Academy
+
+A college website interface for displaying departments, courses, faculty, students, events, and other college information using HTML, CSS, and JavaScript.
+
+- **Date:** 18 October 2026
+- **Live Demo:** [Orbito Academy](https://orbito-academy.harshrajput0426.workers.dev/)
 
 <br>
 
