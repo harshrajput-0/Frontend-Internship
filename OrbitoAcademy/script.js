@@ -5,27 +5,27 @@ const menuBtn = document.getElementById("menu-button");
 const navLinks = document.getElementById("nav-links");
 
 menuBtn.addEventListener("click", function () {
-    menuBtn.classList.toggle("open");
-    navLinks.classList.toggle("open")
+  menuBtn.classList.toggle("open");
+  navLinks.classList.toggle("open")
 });
 
 navLinks.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", function () {
-        menuToggle.classList.remove("open");
-        navLinks.classList.remove("open");
-    })
+  link.addEventListener("click", function () {
+    menuToggle.classList.remove("open");
+    navLinks.classList.remove("open");
+  })
 })
 
 // Navigation Link Array
 const navigationLinks = [
   { name: "Home", href: "#home" },
   { name: "About Us", href: "#about" },
-  { name: "Academics", href: "#academics" },
-  { name: "Faculty", href: "#faculty" },
+  { name: "Courses", href: "#courses" },
+  // { name: "Faculty", href: "#faculty" },
   { name: "Facilities", href: "#facilities" },
-  { name: "Admissions", href: "#admissions" },
+  // { name: "Admissions", href: "#admissions" },
   { name: "Events", href: "#events" },
-  { name: "Contact Us", href: "#contact" },
+  { name: "Contact", href: "#contact" },
 ];
 
 // Rendering links
@@ -49,29 +49,30 @@ window.addEventListener("scroll", () => {
 
 
 // ================================================================
-
+// -----------------------| COURSE SECTION |-----------------------
+// ================================================================
 const courses = [
   {
     name: "Science",
-    image: "assets/science.svg",
+    image: "assets/science-lab.jpg",
     description:
       "Explore physics, chemistry, and biology through practical learning and experiments.",
   },
   {
     name: "Commerce",
-    image: "assets/commerce.svg",
+    image: "assets/commerce.jpg",
     description:
       "Learn accounting, economics, business studies, and financial management.",
   },
   {
     name: "Arts & Humanities",
-    image: "assets/arts.svg",
+    image: "assets/art.jpg",
     description:
       "Discover history, geography, literature, and social sciences.",
   },
   {
     name: "Computer Science",
-    image: "assets/computer.svg",
+    image: "assets/computer-lab.jpg",
     description:
       "Build digital skills through programming, technology, and problem-solving.",
   },
@@ -100,7 +101,9 @@ coursesContainer.innerHTML = courses
 
 
 
-//   =============================================================
+// =================================================================
+// -----------------------| FACULTY SECTION |-----------------------
+// =================================================================
 
 const faculty = [
   {
@@ -175,86 +178,88 @@ facultyContainer.innerHTML = faculty
 
 
 
-// ==============================================================
+// ==================================================================
+// -----------------------| FACILITY SECTION |-----------------------
+// ==================================================================
 const facilities = [
-    {
-        title: "Modern Library",
-        image: "/assests/library.jpg",
-        alt: "School library",
-        description:
-            "Our library provides a peaceful environment for students to learn, research, and grow.",
-        features: [
-            "Extensive collection of books",
-            "Quiet study areas",
-            "Digital learning facilities",
-            "Friendly and helpful staff",
-        ],
-    },
-    {
-        title: "Science Laboratories",
-        image: "/assests/science-lab.jpg",
-        alt: "Science laboratory",
-        description:
-            "Our laboratories encourage curiosity through practical experiments and scientific exploration.",
-        features: [
-            "Well-equipped laboratories",
-            "Hands-on experiments",
-            "Safe learning environment",
-            "Practical science activities",
-        ],
-    },
-    {
-        title: "Computer Lab",
-        image: "/assests/computer-lab.jpg",
-        alt: "School computer lab",
-        description:
-            "Our computer lab helps students develop digital literacy and essential technology skills.",
-        features: [
-            "Modern computer systems",
-            "Digital learning resources",
-            "Programming fundamentals",
-            "Technology-based education",
-        ],
-    },
-    {
-        title: "Sports Facilities",
-        image: "/assests/sports.jpg",
-        alt: "School sports ground",
-        description:
-            "Our sports facilities promote fitness, teamwork, discipline, and a healthy lifestyle.",
-        features: [
-            "Spacious playground",
-            "Indoor and outdoor games",
-            "Physical education",
-            "Sports competitions",
-        ],
-    },
-    {
-        title: "Smart Classrooms",
-        image: "/assests/classroom.jpg",
-        alt: "Modern school classroom",
-        description:
-            "Our classrooms combine interactive teaching methods with technology to make learning engaging.",
-        features: [
-            "Digital learning resources",
-            "Comfortable seating",
-            "Interactive lessons",
-            "Student-focused teaching",
-        ],
-    },
-    {
-        title: "School Auditorium",
-        image: "/assests/auditorium.jpg",
-        alt: "School auditorium",
-        description:
-            "Our auditorium provides a space for school events, performances, presentations, and celebrations.",
-        features: [
-            "Stage for performances",
-            "School assemblies",
-            "Cultural events",
-            "Presentations and seminars",
-        ],
-    },
+  {
+    title: "Modern Library",
+    image: "/assets/library.jpg",
+    alt: "School library",
+    description:
+      "Our library provides a peaceful environment for students to learn, research, and grow.",
+    features: [
+      "Extensive collection of books",
+      "Quiet study areas",
+      "Digital learning facilities",
+      "Friendly and helpful staff",
+    ],
+  },
+  {
+    title: "Science Laboratories",
+    image: "/assets/science-lab.jpg",
+    alt: "Science laboratory",
+    description:
+      "Our laboratories encourage curiosity through practical experiments and scientific exploration.",
+    features: [
+      "Well-equipped laboratories",
+      "Hands-on experiments",
+      "Safe learning environment",
+      "Practical science activities",
+    ],
+  },
+  {
+    title: "Computer Lab",
+    image: "/assets/computer-lab.jpg",
+    alt: "School computer lab",
+    description:
+      "Our computer lab helps students develop digital literacy and essential technology skills.",
+    features: [
+      "Modern computer systems",
+      "Digital learning resources",
+      "Programming fundamentals",
+      "Technology-based education",
+    ],
+  },
+  {
+    title: "Sports Facilities",
+    image: "/assets/sports.jpg",
+    alt: "School sports ground",
+    description:
+      "Our sports facilities promote fitness, teamwork, discipline, and a healthy lifestyle.",
+    features: [
+      "Spacious playground",
+      "Indoor and outdoor games",
+      "Physical education",
+      "Sports competitions",
+    ],
+  },
+  {
+    title: "Smart Classrooms",
+    image: "/assets/classroom.jpg",
+    alt: "Modern school classroom",
+    description:
+      "Our classrooms combine interactive teaching methods with technology to make learning engaging.",
+    features: [
+      "Digital learning resources",
+      "Comfortable seating",
+      "Interactive lessons",
+      "Student-focused teaching",
+    ],
+  },
+  {
+    title: "School Auditorium",
+    image: "/assets/auditorium.jpg",
+    alt: "School auditorium",
+    description:
+      "Our auditorium provides a space for school events, performances, presentations, and celebrations.",
+    features: [
+      "Stage for performances",
+      "School assemblies",
+      "Cultural events",
+      "Presentations and seminars",
+    ],
+  },
 ];
 
 
@@ -262,8 +267,8 @@ const facilities = [
 const facilitiesContainer = document.getElementById("facilitiesContainer");
 
 facilitiesContainer.innerHTML = facilities
-    .map(
-        (facility) => `
+  .map(
+    (facility) => `
             <div class="overlay-card">
                 <div class="card-image">
                     <img src="${facility.image}" alt="${facility.alt}">
@@ -275,14 +280,14 @@ facilitiesContainer.innerHTML = facilities
 
                     <ul>
                         ${facility.features
-                            .map((feature) => `<li>${feature}</li>`)
-                            .join("")}
+        .map((feature) => `<li>${feature}</li>`)
+        .join("")}
                     </ul>
                 </div>
             </div>
         `
-    )
-    .join("");
+  )
+  .join("");
 
 
 
@@ -297,7 +302,44 @@ facilitiesContainer.innerHTML = facilities
 
 
 
-    // ===============================================
-    // Event BOx 
+// ================================================================
+// -----------------------| EVENT SECTION |-----------------------
+// ================================================================
 
-    const eventBox = document.getElementById("event-box")
+const eventBox = document.getElementById("event-box");
+
+const events = [
+  {
+    name: "Annual Day Celebration",
+    image: "/assets/annual.jpg"
+  },
+  {
+    name: "Sports Day",
+    image: "/assets/sports.jpg"
+  },
+  {
+    name: "Science Exhibition",
+    image: "/assets/science-lab.jpg"
+  },
+  {
+    name: "Cultural Festival",
+    image: "/assets/cultural.jpg"
+  },
+  {
+    name: "Art & Craft Exhibition",
+    image: "/assets/art.jpg"
+  },
+  {
+    name: "Graduation Ceremony",
+    image: "/assets/graduation.jpg"
+  },
+];
+
+
+eventBox.innerHTML = events.map((e) => `<div class="event-card">
+                            <img src="${e.image}" alt="${e.name} Image">
+
+                            <div class="event-overlay">
+                                <h3>${e.name}</h3>
+                            </div>
+                        </div>`).join("")

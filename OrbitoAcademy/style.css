@@ -16,14 +16,13 @@
   --primary-hover: #0745c8;
   --primary-light: #93c5fd;
 
-  
   --border: #bdbdbd;
 }
 
 html {
   font-weight: 700;
   scroll-behavior: smooth;
-   font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 body {
@@ -31,23 +30,28 @@ body {
   color: var(--text);
 }
 
+/*
+------------------------------------------------------------------
+============================| HEADER |============================
+------------------------------------------------------------------
+*/
 header {
   border-bottom: 1px solid var(--border);
   position: fixed;
   top: 0;
   z-index: 9;
-  /* display: flex; */
   justify-content: space-between;
   width: 100%;
-  /* background-color: red; */
   font-family: "Syne", sans-serif;
-
+  padding: 14px 5%;
+  transition: background-color 0.2s ease;
+  color: white;
 }
 
 .header.scrolled {
-  padding: 14px 5%;
-  background: #ffffff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 nav {
@@ -65,13 +69,13 @@ nav {
   display: flex;
   gap: 6px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .logo svg {
   width: 36px;
   animation: spin 8s linear infinite;
 }
-
 
 @keyframes spin {
   from {
@@ -86,6 +90,10 @@ nav {
 #nav-links {
   display: flex;
   gap: 24px;
+  color: white;
+}
+
+.header.scrolled #nav-links {
   color: var(--muted);
 }
 
@@ -141,8 +149,23 @@ nav {
   display: block;
 }
 
-/* ---------------| MOBILE SCREEN [BELOW 730PX] |--------------- */
-@media (max-width: 730px) {
+/* ---------------| DEVICE SCREEN [BELOW 1300PX] |--------------- */
+@media (max-width: 1260px) {
+  header {
+    padding: 10px 20px;
+  }
+  nav {
+    padding: 12px;
+  }
+  .logo,
+  #nav-links {
+    transform: scale(0.8);
+  }
+}
+
+/* ---------------| DEVICE SCREEN [BELOW 880PX] |--------------- */
+
+@media (max-width: 880px) {
   nav {
     padding: 8px 18px;
   }
@@ -188,26 +211,21 @@ nav {
     display: none;
   }
 
-/* Menu Button  */
-    #menu-button {
+  /* Menu Button  */
+  #menu-button {
     display: flex;
   }
 }
-
-
-
-
-
 
 /* ================================================================== */
 main {
   width: 100%;
 }
 
-section {
+mainnot:not(:first-child) {
   padding: 20px 0;
-  /* background-color: red; */
 }
+
 /*
 ------------------------------------------------------------------
 ======================| HERO SECITON |============================
@@ -229,7 +247,7 @@ section {
       rgba(7, 20, 38, 0.35) 65%,
       rgba(7, 20, 38, 0.05) 100%
     ),
-    url("/assests/hero.jpg") center / cover no-repeat;
+    url("/assets/hero.jpg") center / cover no-repeat;
 }
 
 /* CONTENT CONTAINER */
@@ -317,12 +335,8 @@ section {
     min-height: 600px;
     background-position: center;
     background-image:
-      linear-gradient(
-        90deg,
-        rgba(7, 20, 38, 0.88),
-        rgba(7, 20, 38, 0.58)
-      ),
-      url("/assests/hero.jpg");
+      linear-gradient(90deg, rgba(7, 20, 38, 0.88), rgba(7, 20, 38, 0.58)),
+      url("/assets/hero.jpg");
   }
 
   .hero-content {
@@ -348,10 +362,6 @@ section {
     box-sizing: border-box;
   }
 }
-
-
-
-
 
 /*
 -------------------------------------------------------------------
@@ -496,39 +506,29 @@ section {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 /*
 -----------------------------------------------------------------------
 ======================| MAIN BODY SECITON |============================
 -----------------------------------------------------------------------
 */
+#courses {
+}
 .container {
   width: min(100% - 2rem, 1200px);
   margin-inline: auto;
+  margin-bottom: 50px;
 }
 
 /* Section Heading */
 .section-heading {
-  font-size: 24px; 
-  width:  fit-content;
+  font-size: 24px;
+  width: fit-content;
   padding: 0 4px;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--primary);
   text-transform: uppercase;
-  margin: 14px 0;
+  margin: 34px 0 14px;
+  
 }
-
-
-
-
 
 .courses-container {
   display: grid;
@@ -592,8 +592,17 @@ section {
   }
 }
 
-/* ==================================================== */
-.faculty-container, .grid {
+/*
+-----------------------------------------------------------------------
+======================| FACULTY SECITON |============================
+-----------------------------------------------------------------------
+*/
+#faculty {
+  padding-top: 10px;
+}
+
+.faculty-container,
+.grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
@@ -606,7 +615,9 @@ section {
   background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 14px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .faculty-card:hover {
@@ -661,13 +672,11 @@ section {
   }
 }
 
-
-
-
-
-
-/* ============================================================================= */
-/* Desktop: image on the left, content on the right */
+/*
+-----------------------------------------------------------------------
+======================| FACITLITY SECITON |============================
+-----------------------------------------------------------------------
+*/
 #faculty {
   background-color: var(--bg-alt);
   padding-bottom: 60px;
@@ -770,18 +779,28 @@ section {
   }
 }
 
+/*
+-----------------------------------------------------------------------
+======================| EVENT SECITON |============================
+-----------------------------------------------------------------------
+*/
+#events {
+  background-color: var(--bg-alt);
+  padding: 20px 0;
+}
+#event-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 12px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
-
-
-
-
-
-
-/* ========================================================== */
 .event-card {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  flex: 1 1 280px;
   height: 320px;
   overflow: hidden;
   border-radius: 20px;
@@ -821,71 +840,68 @@ section {
   transform: scale(1.05);
 }
 
-/* ============================================================== */
-
+/*
+-----------------------------------------------------------------------
+======================| ADMISSION SECITON |============================
+-----------------------------------------------------------------------
+*/
 .admission-banner {
-    width: min(100% - 3rem, 1200px);
-    margin: 4rem auto;
-    padding: 2.5rem 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    background: #eff6ff;
-    border-radius: 1rem;
+  width: min(100% - 3rem, 1200px);
+  margin: 4rem auto;
+  padding: 2.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: #eff6ff;
+  border-radius: 1rem;
 }
 
 .admission-banner h2 {
-    margin: 0 0 0.75rem;
-    color: #1e3a8a;
-    font-size: 2rem;
+  margin: 0 0 0.75rem;
+  color: #1e3a8a;
+  font-size: 2rem;
 }
 
 .admission-banner p {
-    margin: 0;
-    max-width: 550px;
-    color: #475569;
-    line-height: 1.7;
+  margin: 0;
+  max-width: 550px;
+  color: #475569;
+  line-height: 1.7;
 }
 
 .admission-btn {
-    flex-shrink: 0;
-    padding: 0.9rem 1.4rem;
-    border-radius: 0.5rem;
-    background: #2563eb;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+  flex-shrink: 0;
+  padding: 0.9rem 1.4rem;
+  border-radius: 0.5rem;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .admission-btn:hover {
-    background: #1d4ed8;
+  background: #1d4ed8;
 }
 
 @media (max-width: 640px) {
-    .admission-banner {
-        width: calc(100% - 2rem);
-        padding: 2rem 1.5rem;
-        align-items: flex-start;
-        flex-direction: column;
-    }
+  .admission-banner {
+    width: calc(100% - 2rem);
+    padding: 2rem 1.5rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
-    .admission-banner h2 {
-        font-size: 1.7rem;
-    }
+  .admission-banner h2 {
+    font-size: 1.7rem;
+  }
 }
 
-
-
-/* ================================================================== */
-
-
-
-
-
-
-
-
+/*
+-----------------------------------------------------------------------
+======================| CONTACT SECITON |============================
+-----------------------------------------------------------------------
+*/
 .contact-section {
   padding: 60px 24px;
   background: #f8fafc;
@@ -944,20 +960,16 @@ section {
   }
 }
 
-
-
-
-
-
-/* ================================================================== */
-
-
+/*
+-----------------------------------------------------------------------
+======================| FOOTER SECITON |============================
+-----------------------------------------------------------------------
+*/
 .footer {
   background: #0b172a;
   color: #cbd5e1;
   padding: 2rem 0;
   font-family: "Syne", sans-serif;
-
 }
 
 .footer-container {
