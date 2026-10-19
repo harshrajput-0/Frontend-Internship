@@ -36,7 +36,7 @@ body {
 ------------------------------------------------------------------
 */
 header {
-  border-bottom: 1px solid var(--border);
+  /* border-bottom: 1px solid var(--border); */
   position: fixed;
   top: 0;
   z-index: 9;
@@ -720,6 +720,17 @@ mainnot:not(:first-child) {
   color: var(--muted);
 }
 
+.card-content ul {
+  margin-top: 16px;
+  list-style: disc;
+  /* background-color: red; */
+}
+
+.card-content ul li {
+  list-style:inside;
+  padding-left: 12px;
+}
+
 /* Mobile: content overlays the image */
 @media (max-width: 600px) {
   .overlay-card {
@@ -1022,3 +1033,4 @@ mainnot:not(:first-child) {
     gap: 1rem;
   }
 }
+
