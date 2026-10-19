@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header class="header" id="header">
+        <nav>
+            <a href="#" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-orbit preview-icon">
+                    <path d="M20.341 6.484A10 10 0 0 1 10.266 21.85" />
+                    <path d="M3.659 17.516A10 10 0 0 1 13.74 2.152" />
+                    <circle cx="12" cy="12" r="3" />
+                    <circle cx="19" cy="5" r="2" />
+                    <circle cx="5" cy="19" r="2" />
+                </svg>
+                <h1>Orbito Academy</h1>
+
+            </a>
+
+            <ul id="nav-links">
+                <li><a class="links" href="example url">Home</a></li>
+                <!-- <li><a class="links" href="another-url"></a></li>
+                <li><a class="links" href="">About Us</a></li>
+                <li><a class="links" href="">Contact Us</a></li> -->
+            </ul>
+
+            <div id="menu-button">
+                <!-- MENU ICON  -->
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-text-align-justify preview-icon">
+                    <path d="M3 5h18" />
+                    <path d="M3 12h18" />
+                    <path d="M3 19h18" />
+                </svg>
+
+                <!-- CROSS ICON  -->
+                <svg class="cross-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-x preview-icon">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+    </section>
+
+
+
+    <main>
+
+
+
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-tag">LEARN · GROW · ACHIEVE</span>
+
+                <h1>
+                    A Brighter Future<br />
+                    Starts <span>Here.</span>
+                </h1>
+
+                <p>
+                    At Green Valley School, we provide a supportive
+                    and inspiring environment where every student
+                    can learn, grow, and reach their full potential.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#academics" class="btn btn-primary">
+                        Explore Our Programs <span>→</span>
+                    </a>
+                    <a href="#about" class="btn btn-outline">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ///////////////////////////////////////////////////////
+  -->
+
+
+        <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="/assests/hero.jpg" alt="Students learning together at Orbito" />
+                    <div class="about-badge">
+                        <strong>Orbito</strong>
+                        <span>Growing Minds, Shaping Futures</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-tag">ABOUT ORBITO</span>
+
+                    <h2>
+                        Learning Today,<br />
+                        <span>Leading Tomorrow.</span>
+                    </h2>
+
+                    <p>
+                        At Orbito, we believe education is more than
+                        academics. It is about building confidence,
+                        encouraging curiosity, and helping every student
+                        discover their potential.
+                    </p>
+
+                    <p>
+                        Through dedicated educators, engaging learning
+                        experiences, and a supportive environment, we
+                        prepare students for a brighter future.
+                    </p>
+
+                    <div class="about-features">
+                        <div>
+                            <span class="feature-icon">✓</span>
+                            <span>Student-centered learning</span>
+                        </div>
+                        <div>
+                            <span class="feature-icon">✓</span>
+                            <span>Experienced educators</span>
+                        </div>
+                        <div>
+                            <span class="feature-icon">✓</span>
+                            <span>Holistic development</span>
+                        </div>
+                    </div>
+
+                    <a href="#academics" class="about-link">
+                        Discover Orbito <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ===================================== ACADEMIA  -->
+        <section id="academics">
+            <section class="courses">
+
+                <div class="container">
+                    <h2 class="section-heading">Courses</h2>
+                    <div id="coursesContainer"></div>
+                </div>
+            </section>
+
+
+
+            <!-- ========================= FACULTY  -->
+            <section id="faculty">
+                <div class="container">
+                    <h2 class="section-heading">Faculty Members</h2>
+                    <div class="faculty-container" id="facultyContainer"></div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- ==================================== -->
+            <section>
+
+                <div class="container">
+                    <h2 class="section-heading">Facilites</h2>
+
+                    <div id="facilitiesContainer"></div>
+                </div>
+
+            </section>
+
+
+
+
+
+            <!-- ============================ Events ===================== -->
+
+            <section>
+
+                <div class="container">
+                    <h2 class="section-heading">Events</h2>
+
+                    <div class="grid" id="event-box">
+
+                        <div class="event-card">
+                            <img src="assets/annual-day.jpg" alt="Annual Day Celebration">
+
+                            <div class="event-overlay">
+                                <h3>Annual Day Celebration</h3>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+
+
+            <!-- /////// ADMISSION ======================================= -->
+
+            <section class="admission-banner" id="admissions">
+                <div>
+                    <h2>Admissions Are Open!</h2>
+                    <p>
+                        Give your child the opportunity to learn, grow,
+                        and build a brighter future with Orbito.
+                    </p>
+                </div>
+
+                <a href="#contact" class="admission-btn">
+                    Apply Now →
+                </a>
+            </section>
+
+
+            <section class="contact-section" id="contact">
+                <h2>Contact Us</h2>
+                <p>Have questions? Get in touch with us.</p>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> info@orbito.edu</p>
+                        <p><strong>Phone:</strong> +91 98765 43210</p>
+                        <p><strong>Address:</strong> Your City, India</p>
+                    </div>
+
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <a href="#" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-orbit preview-icon">
+                    <path d="M20.341 6.484A10 10 0 0 1 10.266 21.85" />
+                    <path d="M3.659 17.516A10 10 0 0 1 13.74 2.152" />
+                    <circle cx="12" cy="12" r="3" />
+                    <circle cx="19" cy="5" r="2" />
+                    <circle cx="5" cy="19" r="2" />
+                </svg>
+                <h1>Orbito Academy</h1>
+
+            </a>
+
+            <ul id="nav-links">
+                <li><a class="links" href="example url">Home</a></li>
+                <li><a class="links" href="another-url">Service</a></li>
+                <li><a class="links" href="">About Us</a></li>
+                <li><a class="links" href="">Contact Us</a></li>
+            </ul>
+
+            <p>© 2026 Orbito. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
