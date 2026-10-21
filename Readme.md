@@ -19,6 +19,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 11 | ShoppingCart          | 15 October 2026 | HTML, CSS, JavaScript |
 | Task 12 | AppointmentBookingApp | 16 October 2026 | HTML, CSS, JavaScript |
 | Task 13 | OrbitoAcademy         | 18 October 2026 | HTML, CSS, JavaScript |
+| Task 14 | InternshipPortal      | 19 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -140,6 +141,15 @@ A college website interface for displaying departments, courses, faculty, studen
 
 - **Date:** 18 October 2026
 - **Live Demo:** [Orbito Academy](https://orbito-academy.harshrajput0426.workers.dev/)
+
+<br>
+
+## Task 14 — Internship Portal
+
+A portal where students can explore internships, view details, apply for opportunities, and track applications using HTML, CSS, and JavaScript.
+
+- **Date:** 19 October 2026
+- **Live Demo:** [Internship Portal](https://internship-portal.harshrajput0426.workers.dev/)
 
 <br>
 
