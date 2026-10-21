@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: currentColor;
+}
+
+:root {
+  --bg: #f5f6f8;
+  --card: #fff;
+  --text: #111827;
+  --muted: #6b7280;
+  --primary: #3c50ff;
+  --primary-hover: #2637d5;
+  --primary-bg: #dfe2ff;
+  --border-clr: #e5e7eb;
+  --border: 1px solid var(--border-clr);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  --danger: rgb(223, 56, 56);
+
+  --shaded-bg: #f5f6f87a;
+
+  --green: green;
+  --green-br: rgb(119, 203, 119);
+  --green-bg: rgb(243, 255, 243);
+  --orange: rgb(224, 145, 0);
+  --orange-br: rgb(216, 171, 86);
+  --orange-bg: rgb(255, 249, 239);
+}
+
+html {
+  /* font-family: "Syne", sans-serif; */
+  font-family: "Inter", sans-serif;
+  /* font-weight: 700; */
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header {
+  border-bottom: 1px solid var(--border-clr);
+  background-color: var(--card);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: var(--shadow);
+}
+
+nav {
+  position: relative;
+  display: flex;
+  padding: 12px 38px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  gap: 6px;
+  text-transform: uppercase;
+}
+
+.logo svg {
+  width: 40px;
+  margin-right: 4px;
+}
+
+#nav-links {
+  display: flex;
+  gap: 24px;
+  color: var(--muted);
+}
+
+#nav-links li a {
+  position: relative;
+}
+
+#nav-links li:hover a {
+  color: var(--primary);
+}
+
+#nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+#nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Hambergur Menu  */
+#menu-button {
+  display: none;
+  width: 42px;
+  aspect-ratio: 1/1;
+  padding: 4px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#menu-button:hover {
+  background-color: var(--card);
+}
+
+#menu-button svg {
+  width: 28px;
+}
+
+.cross-icon,
+#menu-button.open .menu-icon {
+  display: none;
+}
+
+#menu-button.open .cross-icon {
+  display: block;
+}
+
+/* ---------------| MOBILE SCREEN [BELOW 730PX] |--------------- */
+@media (max-width: 730px) {
+  nav {
+    padding: 8px 18px;
+  }
+
+  /* Navigation links */
+  #nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--bg);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  /* Navigation Links in opne state */
+  #nav-links.open {
+    max-height: 300px;
+    border-bottom: 1px solid var(--border-clr);
+  }
+
+  #nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav-links li:hover {
+    background-color: var(--card);
+  }
+
+  #nav-links a {
+    display: block;
+    padding: 14px;
+  }
+
+  #nav-links li a::after {
+    display: none;
+  }
+
+  /* Menu Button  */
+  #menu-button {
+    display: flex;
+  }
+}
+
+/* =============================================== */
+
+main {
+  /* background-color: green; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+section {
+  margin: 80px auto;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+#internship-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--card);
+  overflow: hidden;
+  border: var(--border);
+  border-radius: 8px;
+  flex: 1 1 390px;
+  max-width: 390px;
+  transition: box-shadow 0.3s ease;
+}
+.card:hover{
+  box-shadow: var(--shadow);
+}
+
+.card-head {
+  padding: 20px;
+}
+
+.label {
+  color: var(--primary);
+  background-color: var(--primary-bg);
+  padding: 4px 12px;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+h2.intern-role {
+  font-size: 22px;
+  margin: 10px 0 8px;
+}
+
+.tag {
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+svg {
+  width: 16px;
+}
+
+.description {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 12px 0;
+}
+
+.pill {
+  border-radius: 8px;
+  border: var(--border);
+  display: inline-flex;
+  font-size: 13px;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+}
+.remote {
+  color: var(--green);
+  border-color: var(--green-br);
+  background-color: var(--green-bg);
+}
+.on-site {
+  color: var(--orange);
+  border-color: var(--orange-br);
+  background-color: var(--orange-bg);
+}
+
+/* ====== META DATA ===== */
+.metadata {
+  background-color: var(--shaded-bg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  padding: 12px 20px;
+  font-size: 13px;
+  border: var(--border);
+  margin: 8px 0;
+}
+
+/* ========== REQUIREMENTS ================= */
+
+.requirements {
+  padding: 20px;
+  color: var(--muted);
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.requirements p {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+
+
+.requirements li {
+  line-height: 20px;
+  position: relative;
+  padding-left: 16px;
+  font-size: 13px;
+}
+
+.requirements li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--card);
+  width: calc(100% - 40px);
+  padding: 8px 0;
+  font-size: 16px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  margin: 0 20px 20px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+
+
+
+
+
+/* =============================== */
+
+dialog {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: auto; 
+  outline: none;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  background-color: var(--card);
+  padding: 20px;
+  border-radius: 8px;
+  gap: 9px;
+}
+
+/* .apply-form h3 { */
+h3 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+input {
+  padding: 8px 14px;
+  font-size: 16px;
+  outline: none;
+  border: var(--border);
+  border-radius: 8px;
+}
+input:focus-visible {
+  border-color: var(--primary);
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn-group button{
+  margin: 0;
+}
+
+button.ghost {
+  background-color: transparent;
+  color: var(--text);
+  border: var(--border);
+}
+button.ghost:hover {
+  background-color: var(--border-clr);
+}
+
+
+/* =============================== */
+
+/* INTERN STATS  */
+.stats {
+  display: flex;
+  padding: 4px;
+  gap: 8px;
+}
+.stat{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color:var(--card);
+  width: 100%;
+  text-align: center;
+    border-radius: 8px;
+  border: var(--border);
+  margin: 10px 0;
+}
+.stat span{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+/* INTERNSHIP LIST  */
+#tracker-list {
+  /* background-color: var(--orange); */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#tracker-list .track-item {
+  background-color: var(--card);
+  color: var(--text);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+#tracker-list .track-item:hover {
+  box-shadow: var(--shadow);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px 20px 7px; */
+}
+
+.info {
+text-align: left;
+}
+.info h3 {
+  text-align: left;
+  margin: 0;
+}
+.info span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Status Button  */
+.status-btn {
+  display: flex;
+}
+.status-btn button {
+  background-color: transparent;
+  color: var(--primary);
+  border: var(--border);
+  border-color: var(--primary);
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+.status-btn button:hover {
+  background-color: var(--primary);
+  color: var(--card);
+}
+
+.status-btn button.withdraw {
+color: var(--danger);
+border-color: var(--danger);
+}
+.status-btn button.withdraw:hover {
+  background-color: var(--danger);
+  color: var(--card);
+}
+
+.track-item p {
+  color: var(--muted);
+  /* background-color:red; */
+}
