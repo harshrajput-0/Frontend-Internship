@@ -21,6 +21,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 13 | OrbitoAcademy         | 18 October 2026 | HTML, CSS, JavaScript |
 | Task 14 | InternshipPortal      | 19 October 2026 | HTML, CSS, JavaScript |
 | Task 15 | JobPortalUI           | 20 October 2026 | HTML, CSS, JavaScript |
+| Task 16 | RestaurantWebsite     | 21 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -160,6 +161,15 @@ A responsive job-search interface where users can browse job listings, search/fi
 
 - **Date:** 20 October 2026
 - **Live Demo:** [Job Portal UI](https://job-protal-ui.harshrajput0426.workers.dev/)
+
+<br>
+
+## Task 16 — Restaurant Website 
+
+An attractive restaurant website that displays the menu, services, gallery, contact details, and table-booking interface using HTML, CSS, and JavaScript.
+
+- **Date:** 21 October 2026
+- **Live Demo:** [Restaurant Website](https://job-protal-ui.harshrajput0426.workers.dev/)
 
 <br>
 
