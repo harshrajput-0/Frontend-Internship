@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+:root {
+  --primary: #f59e0b;
+  --primary-hover: #d97706;
+  --secondary: #ffc857;
+
+  --border-cls: #48483f;
+  --border: 1px solid var(--border-cls);
+  --ring: var(--primary);
+
+  --bg: #161614;
+  --card: #302f2a;
+  --text: #fff7e8;
+  --muted: #cecac1;
+  --gradient: linear-gradient(to right, var(--bg) 0%, var(--card) 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: Gloock, Georgia, serif;
+  line-height: 1.15;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+}
+
+/*
+------------------------------------------------------------------
+============================| HEADER |============================
+------------------------------------------------------------------
+*/
+header {
+  width: 100%;
+  padding: 18px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card);
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+h1 {
+  font-size: clamp(20px, 1rem, 26px);
+}
+
+#navLinks {
+  display: flex;
+}
+#navLinks li {
+  margin: 0 8px;
+  font-size: clamp(14px, 0.9rem, 16px);
+}
+
+/* MAIN ======================= */
+section.alt {
+  background-color: var(--card);
+}
+.container {
+  max-width: 1200px;
+  padding: 56px 22px;
+  margin: auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 780px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 24px;
+  color: var(--text);
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 68%;
+  object-fit: cover;
+  object-position: 55% 50%;
+  mask-image: linear-gradient(90deg, transparent, #000 45%);
+}
+
+.hero-content {
+  width: 50%;
+  /* background-color: red; */
+  position: relative;
+  text-align: left;
+}
+.hero-content h1 {
+  font-size: clamp(44px, 8vw, 74px);
+  letter-spacing: -0.01em;
+  font-weight: 900;
+}
+
+.hero-content p {
+  margin: 28px 0;
+  color: var(--muted);
+  font-family: "Inter", sans-serif;
+  line-height: 1.8;
+  font-size: 19px;
+  font-size: clamp(1rem, 1.4vw, 1.1875rem);
+}
+
+/* BUTTON  */
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--bg);
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 28px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: clamp(13px, 1vw, 1rem);
+}
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+.btn.ghost:hover {
+  background: var(--card);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: inherit;
+  border: 1.5px solid currentColor;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(0, 0, 0, 0.1) 100%,
+      #00000056 50%
+    );
+  }
+}
+
+/* ================================== */
+/* MENU SECTION  */
+/* ================================= */
+h2 {
+  font-size: clamp(30px, 5vw, 44px);
+  margin-bottom: 12px;
+}
+
+.sub-title {
+  font-size: 17px;
+  margin-bottom: 36px;
+  color: var(--muted);
+}
+
+.menu-tabs {
+  margin-bottom: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8;
+}
+
+.tabs {
+  border: var(--border);
+  background: var(--card);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 20px;
+  margin-left: 8px;
+  font-size: clamp(13px, 1vw, 1rem);
+}
+.tabs.active {
+  background-color: var(--primary);
+  color: var(--bg);
+}
+
+.menu-item {
+  list-style: inside;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dashed var(--border-cls);
+  padding: 15px 0;
+}
+
+.item-heading {
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item p {
+  color: var(--muted);
+}
+
+/* ================================== */
+/* SERCIVE SECTION  */
+/* ================================= */
+#serciveCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 12px;
+  border: var(--border);
+  flex: 1 1 260px;
+  padding: 24px;
+  max-width: 334px;
+  border-radius: 12px;
+  background-color: var(--bg);
+  text-align: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  /* background-color: red; */
+  margin: auto;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 12px 0 8px;
+}
+.card p {
+  color: var(--muted);
+}
+
+/* ================================== */
+/* GALLERY SECTION  */
+/* ================================= */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 160px;
+  gap: 12px;
+}
+#gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--secondary);
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  #gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  #gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 120px;
+    gap: 8px;
+    padding: 10px;
+  }
+}
+/* ================================== */
+/* BOOKING SECTION  */
+/* ================================= */
+
+.two-colm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+  align-items: start;
+}
+
+form {
+  padding: 24px;
+  border-radius: 8px;
+  border: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 500px;
+}
+
+form label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+form span {
+  /* background-color: red; */
+  min-width: 60px;
+}
+
+form input,
+form select {
+  background-color: var(--bg);
+  padding: 10px 16px;
+  border: var(--border);
+  border-radius: 8px;
+  width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+
+@media (max-width: 700px) {
+  .two-colm {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* ================================== */
+/* CONTACT SECTION  */
+/* ================================= */
+.info p strong {
+  display: inline-block;
+  min-width: 140px;
+  /* background-color: red; */
+  line-height: 2.4;
+}
+
+/* ===| FOOTER |============ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--card);
+}

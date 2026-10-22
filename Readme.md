@@ -20,6 +20,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 12 | AppointmentBookingApp | 16 October 2026 | HTML, CSS, JavaScript |
 | Task 13 | OrbitoAcademy         | 18 October 2026 | HTML, CSS, JavaScript |
 | Task 14 | InternshipPortal      | 19 October 2026 | HTML, CSS, JavaScript |
+| Task 15 | JobPortalUI           | 20 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -150,6 +151,15 @@ A portal where students can explore internships, view details, apply for opportu
 
 - **Date:** 19 October 2026
 - **Live Demo:** [Internship Portal](https://internship-portal.harshrajput0426.workers.dev/)
+
+<br>
+
+## Task 15 — Job Portal UI
+
+A responsive job-search interface where users can browse job listings, search/filter opportunities, and view job details using HTML, CSS, and JavaScript.
+
+- **Date:** 20 October 2026
+- **Live Demo:** [Job Portal UI](https://job-protal-ui.harshrajput0426.workers.dev/)
 
 <br>
 
