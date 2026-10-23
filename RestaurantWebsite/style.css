@@ -58,16 +58,34 @@ header {
   z-index: 99;
 }
 
+header.scrolled {
+  border: var(--border);
+}
+
 h1 {
   font-size: clamp(20px, 1rem, 26px);
 }
 
+nav {
+  position: relative;
+}
+#menu {
+  display: none;
+  position: relative;
+  anchor-name: --menu-icon;
+}
 #navLinks {
   display: flex;
 }
 #navLinks li {
   margin: 0 8px;
   font-size: clamp(14px, 0.9rem, 16px);
+}
+
+@media (max-width: 520px) {
+  #navLinks {
+    transform: scale(0.8);
+  }
 }
 
 /* MAIN ======================= */
@@ -167,6 +185,19 @@ section.alt {
       #00000056 50%
     );
   }
+
+  .btn {
+    padding: 10px 24px;
+    margin: 6px 0;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 56px 14px;
+  }
 }
 
 /* ================================== */
@@ -195,9 +226,11 @@ h2 {
   background: var(--card);
   color: var(--text);
   border-radius: 999px;
-  padding: 8px 20px;
+  padding: 8px 18px;
   margin-left: 8px;
   font-size: clamp(13px, 1vw, 1rem);
+  font-weight: 650;
+  margin: 6px 6px 6px 0;
 }
 .tabs.active {
   background-color: var(--primary);
@@ -354,13 +387,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* ================================== */
 /* CONTACT SECTION  */
 /* ================================= */
-.info p strong {
-  display: inline-block;
-  min-width: 140px;
-  /* background-color: red; */
+.info p {
+  display: grid;
+  grid-template-columns: 140px max-content;
+  gap: 0 0;
   line-height: 2.4;
+
 }
 
+.info p strong {
+  min-width: 0;
+}                        
+
+.info p:first-child {
+  grid-template-columns: 140px max-content;
+}
+
+@media (max-width: 480px) {
+  .info {
+    transform: scale(0.9);
+    margin-right: auto;
+    margin-left: -14px;
+  }
+} 
 /* ===| FOOTER |============ */
 footer {
   text-align: center;
