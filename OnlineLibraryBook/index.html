@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Pocket Book</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>PocketBook</h1>
+            <p>Browse our book collection, add and update the books</p>
+        </header>
+
+        <nav>
+            <input type="text" id="search" placeholder="Search titles">
+            <select name="Genres" id="genreCategory">
+                <option value="All">All</option>
+                <option value="Fiction">Fiction</option>
+            </select>
+
+            <button type="button" class="pry" onclick="openAddBook()" id="addBookBtn">Add Book</button>
+        </nav>
+
+        <section id="bookSection">
+            <!-- RENDER CARDS USING JAVASCTIPT  -->
+        </section>
+
+
+
+
+    </main>
+
+    <!-- ============================================= -->
+    <dialog id="bookDialog">
+        <form id="bookForm">
+            <h2 id="dialogTitle">Add Book</h2>
+            <label for="title"><span>Title</span><input type="text" id="title" placeholder="Book Title"
+                    required></label>
+            <label for="author"><span>Author</span><input type="text" id="author" placeholder="Author Name"
+                    required></label>
+            <label for="cover"><span>Cover</span><input type="url" id="cover" placeholder="Book Cover"
+                    required></label>
+
+            <label for="genre"><span>Genre</span><select name="genre" id="genre" required></select></label>
+
+            <label for="year"><span>Year</span><input type="text" id="year" placeholder="Release Year" required></label>
+            <label for="isbn"><span>ISBN</span><input type="text" id="isbn" placeholder="ISBN Number" required></label>
+
+            <div class="row">
+                <button class="outline" type="button" onclick="closeBook()">Cancel</button>
+                <button class="pry" type="submit">Save Book</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="deleteDialog">
+        <h3>Delete Book?</h3>
+        <p>Are you sure you want to delete this book?</p>
+
+        <button id="cancelDelete">Cancel</button>
+        <button id="confirmDelete" class="danger">Delete</button>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+
+</html>
