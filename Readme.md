@@ -23,6 +23,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 15 | JobPortalUI           | 20 October 2026 | HTML, CSS, JavaScript |
 | Task 16 | RestaurantWebsite     | 21 October 2026 | HTML, CSS, JavaScript |
 | Task 17 | OnlineBookLibrary     | 22 October 2026 | HTML, CSS, JavaScript |
+| Task 18 | VirtualKeyboard       | 23 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -180,6 +181,15 @@ A web-based library system developed using HTML, CSS, and JavaScript that allows
 
 - **Date:** 22 October 2026
 - **Live Demo:** [Online Book Library ](https://pocketbook.harshrajput0426.workers.dev/)
+
+<br>
+
+## Task 18 — Virtual Keyboard
+
+A web-based virtual keyboard that allows users to type text by clicking on on-screen keys, built using HTML, CSS, and JavaScript with interactive key functionality.
+
+- **Date:** 23 October 2026
+- **Live Demo:** [Virtual Keyboard](https://virtual-keyboard.harshrajput0426.workers.dev/)
 
 <br>
 
