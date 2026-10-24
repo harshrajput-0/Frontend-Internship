@@ -11,6 +11,7 @@
   --text: #232538;
   --muted: #4b5563;
 
+  --primary: #7997d5;
   --border-clr: #c5d0de;
   --border: 1px solid var(--border-clr);
 }
@@ -91,6 +92,13 @@ textarea::-webkit-scrollbar {
   border-radius: 5px;
   cursor: pointer;
   background-color: var(--bg);
+  transition: all 0.2s ease;
+}
+
+.key:hover {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--bg);
 }
 
 .key.pressed {
