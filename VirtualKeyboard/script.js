@@ -75,7 +75,6 @@ const keys = [
 
 
 
-console.log("dhsklsdf")
 
 // ELEMENTS 
 const keyboard = document.getElementById("keyboard");
@@ -123,7 +122,7 @@ function updateKeyLabels() {
 // GETTING BUTTONS
 const Buttons = document.querySelectorAll(".btn");
 
-Buttons.forEach(btn => {
+Buttons.forEach(btn => {sp: "enter" 
     btn.addEventListener("click", () => {
         let key = btn.textContent.trim();
 
@@ -215,3 +214,6 @@ document.addEventListener("keyup", event => {
     updateKeyLabels()
 
 });
+
+
+console.log("dhsklsdf")

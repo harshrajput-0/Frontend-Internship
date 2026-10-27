@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <title>EventHub</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>EventHub </h2>
+
+        <div class="btn-group">
+            <button><a href="#eventsec">Event</a></button>
+            <button><a href="#regsec">My Registration</a></button>
+        </div>
+    </header>
+
+    <!-- HEOR SECTION -->
+    <section class="hero">
+        <h1>Discover events register in seconds</h1>
+        <p>Find workshops, conferences, and community gatherings — all in one place.</p>
+
+
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search events of your interests...">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-search preview-icon">
+                <path d="m21 21-4.34-4.34" />
+                <circle cx="11" cy="11" r="8" />
+            </svg>
+        </div>
+    </section>
+
+    <main>
+
+        <!-- EVENT CARD SECTION -->
+        <section id="eventsec">
+            <h2>Event LIST</h2>
+
+            <div id="cardArea"></div>
+            <div id="dialogArea"></div>
+        </section>
+     
+
+
+        <!-- REGISTERED EVENT SECTION -->
+        <section id="regsec">
+            <h2>Registered Event</h2>
+            <div id="allRegistration"></div>
+
+        </section>
+
+
+    </main>
+
+    <script src="script.js">    </script>
+
+</body>
+
+</html>
