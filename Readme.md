@@ -24,6 +24,7 @@ This repository contains the frontend projects completed as part of my frontend 
 | Task 16 | RestaurantWebsite     | 21 October 2026 | HTML, CSS, JavaScript |
 | Task 17 | OnlineBookLibrary     | 22 October 2026 | HTML, CSS, JavaScript |
 | Task 18 | VirtualKeyboard       | 23 October 2026 | HTML, CSS, JavaScript |
+| Task 19 | EventRegistration     | 25 October 2026 | HTML, CSS, JavaScript |
 
 <br>
 
@@ -190,6 +191,19 @@ A web-based virtual keyboard that allows users to type text by clicking on on-sc
 
 - **Date:** 23 October 2026
 - **Live Demo:** [Virtual Keyboard](https://virtual-keyboard.harshrajput0426.workers.dev/)
+
+
+<br>
+
+## Task 19 — Event Registration
+
+Event Registration System is a web-based application built using HTML, CSS, and JavaScript that allows users to view event details, register for events, and manage their registration information through an interactive interface.
+
+- **Date:** 25 October 2026
+- **Live Demo:** [Event Registration](https://event-registration.harshrajput0426.workers.dev/)
+
+
+
 
 <br>
 
